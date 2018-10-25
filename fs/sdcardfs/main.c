@@ -136,6 +136,9 @@ static int parse_options(struct super_block *sb, char *options, int silent,
 		case Opt_nocache:
 			opts->nocache = true;
 			break;
+		case Opt_unshared_obb:
+			opts->unshared_obb = true;
+			break;
 		/* unknown option */
 		default:
 			if (!silent)
